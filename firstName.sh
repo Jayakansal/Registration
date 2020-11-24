@@ -25,3 +25,14 @@ echo "yes"
 else
 echo "no"
 fi
+echo "Welcome to the pattern execise"
+read -p "enter mobile Number:" MobileNo
+MobileNumber=(^91[6-9]{1}[0-9]{9}$)
+if(( $MobileNo  == $MobileNumber ))
+then
+echo "yes"
+else
+echo "no"
+fi
+
+
