@@ -16,3 +16,12 @@ echo "yes"
 else
 echo "no"
 fi
+echo "Welcome to the pattern execise"
+read -p "enter email id:" emailid
+EmailId=(^[0-9 a-z A-Z]+@[0-9 a-z A-Z]+.[a-z A-Z]{2,4}$)
+if(( $emailid  == $EmailId ))
+then
+echo "yes"
+else
+echo "no"
+fi
