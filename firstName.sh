@@ -34,5 +34,13 @@ echo "yes"
 else
 echo "no"
 fi
-
+echo "Welcome to the pattern execise"
+read -p "enter password:" Password
+password =((^=.{8,}$)(?=.*\d)(?=.*\[A-Z])[a-z A-Z 0-9]*[\@\#\^][a-z A-Z 0-9]*$
+if(( $Password  == $password  ))
+then
+echo "yes"
+else
+echo "no"
+fi
 
